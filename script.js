@@ -1,13 +1,29 @@
-// Change this number to your WhatsApp number in international format.
-// Example Morocco: 2126XXXXXXXX (without + and without spaces)
-const WHATSAPP_NUMBER = "212600000000";
+const WHATSAPP_NUMBER = "212641544783";
 
-function order(product){
-  const message = encodeURIComponent("Bonjour Royal Allure 👑 Je souhaite commander : " + product);
-  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message, "_blank");
+function order(product) {
+  const message =
+    "Bonjour Royal Allure 👑\n" +
+    "✨ Bienvenue chez Royal Allure Accessories !\n" +
+    "C’est un plaisir de vous accueillir. 💕\n" +
+    "Comment pouvons-nous vous aider aujourd’hui ?";
+
+  window.open(
+    "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message),
+    "_blank"
+  );
 }
-document.getElementById("wa").addEventListener("click", function(e){
+
+document.getElementById("wa").addEventListener("click", function(e) {
   e.preventDefault();
-  const message = encodeURIComponent("Bonjour Royal Allure 👑 Je souhaite passer une commande.");
-  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message, "_blank");
+
+  const message =
+    "Bonjour Royal Allure 👑\n" +
+    "✨ Bienvenue chez Royal Allure Accessories !\n" +
+    "C’est un plaisir de vous accueillir. 💕\n" +
+    "Comment pouvons-nous vous aider aujourd’hui ?";
+
+  window.open(
+    "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message),
+    "_blank"
+  );
 });
